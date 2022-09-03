@@ -39,9 +39,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
-};
-
-/ {
+	
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -49,5 +47,5 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-    };
+    };	
 };
