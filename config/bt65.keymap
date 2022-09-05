@@ -43,7 +43,7 @@
 				&trans &trans &trans &kp C_EJECT &trans &kp TILDE &trans &trans &kp INS &trans &trans &kp SLCK &kp PAUSE_BREAK &reset &rgb_ug RGB_HUI
 				&kp CLCK &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp PG_UP   &bootloader &rgb_ug RGB_HUD
 				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &kp HOME &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
-				trans trans  &trans              &trans                            &trans   &mo 2   &trans trans &trans &bl BL_DEC
+				&trans &trans  &trans              &trans                            &trans   &mo 2   &trans &trans &trans &bl BL_DEC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
