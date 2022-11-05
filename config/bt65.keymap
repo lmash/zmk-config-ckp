@@ -48,7 +48,7 @@
 			bindings = <
 				&kp ESC    &kp F1   &kp F2       &kp F3     &kp F4 &kp F5    &kp F6   &kp F7         &kp F8   &kp F9    &kp F10   &kp F11    &kp F12         &bl BL_TOG &rgb_ug RGB_TOG
 				&trans     &trans   &kp C_EJECT  &kp EQUAL  &trans &kp TILDE &trans   &kp UNDERSCORE &kp INS  &trans    &kp PIPE  &kp SLCK   &kp PAUSE_BREAK &reset     &rgb_ug RGB_HUI
-				&kp CLCK   &trans   &trans       &trans     &trans &trans    &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP  &bootloader                &rgb_ug RGB_HUD
+				&kp CLCK   &trans   &trans       &trans     &trans &kp PIPE  &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP  &bootloader                &rgb_ug RGB_HUD
 				&kp C_PREV &kp PIPE &kp C_VOL_UP &kp C_MUTE &trans &trans    &trans   &kp MINUS      &kp HOME &kp END   &kp PG_DN &kp C_NEXT &trans                     &bl BL_INC
 				&trans     &trans   &trans              &trans                            &trans     &mo 2    &trans    &trans    &trans                                &bl BL_DEC
 			>;
