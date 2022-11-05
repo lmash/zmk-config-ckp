@@ -23,7 +23,7 @@
 				// ----------------------------------------------------------------------------------------------------------------------------------
 				// | ESC    |  1   |  2    |  3  |   4  |   5  |   6  |   7  |    8  |      9  |        0  |     -  |      =  |      BKSP  |  DEL   |
 				// | TAB    |  Q   |  W    |  E  |   R  |   T  |   Y  |   U  |    I  |      O  |        P  |     [  |      ]  |       \    |  INS   |
-				// | CAPS   |  A   |  S    |  D  |   F  |   G  |   H  |   J  |    K  |      L  |        ;  |     '  |                ENTER |  PGUP  |
+				// | LVL 1  |  A   |  S    |  D  |   F  |   G  |   H  |   J  |    K  |      L  |        ;  |     '  |                ENTER |  PGUP  |
 				// |  SHIFT |  Z   |  X    |  C  |   V  |   B  |   N  |   M  |    ,  |      .  |        /  | SHIFT  |                UP    |  PGDN  |
 				// |  CTL   |  WIN |  ALT  |              SPACE                             | ALT |     1  |   MENU |    LEFT |      DOWN  |  RIGHT |
 				// ----------------------------------------------------------------------------------------------------------------------------------
@@ -38,19 +38,19 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		raise {
-				// -----------------------------------------------------------------------------------------------------------------------------
-				// |  ESC  | F1 | F2   |  F3  |  F4  |  F5  |  F6  |  F7  |   F8  |     F9  |    F10  |  F11  |   F12  |  BL_TOG |      RGB_TOG |
-				// |    |      |  EJECT  |     =  |           |  ~  |    |    |        INS  |  O  |  P  |  [  |  ]  |   |
-				// | LVL 1|  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER
-				// |  SHIFT    |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |      SHIFT
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | LVL 2  |  MENU    |  CTRL
-				// ------------------------------------------------------------------------------------------				
+				// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				// | ESC    |  F1   |   F2       |   F3     |   F4 |   F5    |   F6   |   F7         |   F8   |   F9    |   F10   |   F11    |   F12  |  BL_TOG         |       RGB_TOG |
+				// |        |       |   EJECT    |   = (E)  |      |   ~ (T) |        |   _ (U)      |  INS   |         |         |   SLCK   |   PAUSE_BREAK            |       RGB_HUI |
+				// | LVL 1  |       |            |          |      |         |   LEFT |   DOWN       |  UP    |   RIGHT |         |   PG_UP  |   bootloader             |       RGB_HUD |
+				// |  SHIFT |  PIPE |   VOL_UP   |   MUTE   |      |         |        |   - (M)      |  HOME  |   END   |   PG_DN |   C_NEXT |                          |       BL_INC  |
+				// |  CTL   |       |            |                                    |              | LVL 2  |         |         |                                     |       BL_DEC  |
+				// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 			bindings = <
-				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
-				&trans &trans &kp C_EJECT &kp EQUAL &trans &kp TILDE &trans &kp UNDERSCORE &kp INS &trans &trans &kp SLCK &kp PAUSE_BREAK &reset &rgb_ug RGB_HUI
-				&kp CLCK &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp PG_UP   &bootloader &rgb_ug RGB_HUD
-				&kp C_PREV &kp PIPE &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &kp MINUS &kp HOME &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
-				&trans &trans  &trans              &trans                            &trans   &mo 2   &trans &trans &trans &bl BL_DEC
+				&kp ESC    &kp F1   &kp F2       &kp F3     &kp F4 &kp F5    &kp F6   &kp F7         &kp F8   &kp F9    &kp F10   &kp F11    &kp F12         &bl BL_TOG &rgb_ug RGB_TOG
+				&trans     &trans   &kp C_EJECT  &kp EQUAL  &trans &kp TILDE &trans   &kp UNDERSCORE &kp INS  &trans    &trans    &kp SLCK   &kp PAUSE_BREAK &reset     &rgb_ug RGB_HUI
+				&kp CLCK   &trans   &trans       &trans     &trans &trans    &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP  &bootloader                &rgb_ug RGB_HUD
+				&kp C_PREV &kp PIPE &kp C_VOL_UP &kp C_MUTE &trans &trans    &trans   &kp MINUS      &kp HOME &kp END   &kp PG_DN &kp C_NEXT &trans                     &bl BL_INC
+				&trans     &trans   &trans              &trans                            &trans     &mo 2    &trans    &trans    &trans                                &bl BL_DEC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
