@@ -39,18 +39,18 @@
 		};
 		raise {
 				// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-				// | ESC    |  F1   |   F2       |   F3     |   F4 |   F5    |   F6   |   F7         |   F8   |   F9    |   F10   |   F11    |   F12  |  BL_TOG         |       RGB_TOG |
-				// |        |       |   EJECT    |   = (E)  |      |   ~ (T) |        |   _ (U)      |  INS   |   = (E) |   PIPE  |   SLCK   |   PAUSE_BREAK            |       RGB_HUI |
-				// | LVL 1  |       |            |          |      |   ` (G) |   LEFT |   DOWN       |  UP    |   RIGHT |         |   PG_UP  |   bootloader             |       RGB_HUD |
-				// |  SHIFT |  PIPE |   VOL_UP   |   MUTE   |      |         |        |   - (M)      |  HOME  |   END   |   PG_DN |   C_NEXT |                          |       BL_INC  |
-				// |  CTL   |       |            |                                    |              | LVL 2  |         |         |                                     |       BL_DEC  |
+				// | ESC    |  F1     |   F2       |   F3     |   F4 |   F5    |   F6   |   F7         |   F8   |   F9    |   F10   |   F11    |   F12  |  BL_TOG         |       RGB_TOG |
+				// |        |         |   EJECT    |   = (E)  |      |   ~ (T) |        |   _ (U)      |  INS   |   = (E) |   PIPE  |   SLCK   |   PAUSE_BREAK            |       RGB_HUI |
+				// | LVL 1  |         |            |          |      |   ` (G) |   LEFT |   DOWN       |  UP    |   RIGHT |         |   PG_UP  |   bootloader             |       RGB_HUD |
+				// |  SHIFT |  VOL_DN |   VOL_UP   |   MUTE   |      |         |        |   - (M)      |  HOME  |   END   |   PG_DN |   C_NEXT |                          |       BL_INC  |
+				// |  CTL   |         |            |                                    |              | LVL 2  |         |         |                                     |       BL_DEC  |
 				// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 			bindings = <
-				&kp ESC    &kp F1   &kp F2       &kp F3     &kp F4 &kp F5    &kp F6   &kp F7         &kp F8   &kp F9    &kp F10   &kp F11    &kp F12         &bl BL_TOG &rgb_ug RGB_TOG
-				&trans     &trans   &kp C_EJECT  &kp EQUAL  &trans &kp TILDE &trans   &kp UNDERSCORE &kp INS  &kp EQUAL &kp PIPE  &kp SLCK   &kp PAUSE_BREAK &trans     &rgb_ug RGB_HUI
-				&kp CLCK   &trans   &trans       &trans     &trans &kp GRAVE &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP  &bootloader                &rgb_ug RGB_HUD
-				&kp C_PREV &kp PIPE &kp C_VOL_UP &kp C_MUTE &trans &trans    &trans   &kp MINUS      &kp HOME &kp END   &kp PG_DN &kp C_NEXT &trans                     &bl BL_INC
-				&trans     &trans   &trans              &trans                            &trans     &mo 2    &trans    &trans    &trans                                &bl BL_DEC
+				&kp ESC    &kp F1       &kp F2       &kp F3     &kp F4 &kp F5    &kp F6   &kp F7         &kp F8   &kp F9    &kp F10   &kp F11    &kp F12         &bl BL_TOG &rgb_ug RGB_TOG
+				&trans     &trans       &kp C_EJECT  &kp EQUAL  &trans &kp TILDE &trans   &kp UNDERSCORE &kp INS  &kp EQUAL &kp PIPE  &kp SLCK   &kp PAUSE_BREAK &trans     &rgb_ug RGB_HUI
+				&kp CLCK   &trans       &trans       &trans     &trans &kp GRAVE &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP  &bootloader                &rgb_ug RGB_HUD
+				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans    &trans   &kp MINUS      &kp HOME &kp END   &kp PG_DN &kp C_NEXT &trans                     &bl BL_INC
+				&trans     &trans       &trans              &trans                            &trans     &mo 2    &trans    &trans    &trans                                &bl BL_DEC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
